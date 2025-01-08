@@ -1,0 +1,116 @@
+/* Smooth Scrolling */
+html {
+scroll-behavior: smooth;
+scroll-padding-top: 70px;
+}
+
+.lead-heading {
+    font-size: 1.75rem; /* Slightly larger font size */
+    font-weight: bold;  /* Make the text bold */
+}
+
+.font-about {
+    font-family: 'Arial', sans-serif; /* Change this to your preferred font */
+}
+
+.about{
+    text-align: center; /* Center align the image and text */
+}
+
+.about-image {
+    width: 100%; /* Make the image take full width of its column */
+    max-width: 300px; /* Control the max size of the image */
+    height: auto;
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+.font-background {
+    font-family: 'Georgia', serif; /* Change this to a different font for the background text */
+    font-size: 1.75rem;
+}
+
+/* Project Card Styles */
+.project-card {
+height: 350px;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.project-image {
+width: 100%;
+height: 200px;
+object-fit: cover;
+}
+.project-buttons {
+display: flex; /* Use flexbox for horizontal alignment */
+justify-content: center; /* Center buttons horizontally */
+gap: 10px; /* Add spacing between buttons */
+margin-top: auto; /* Push buttons to the bottom of the card */
+}
+
+/* Timeline Styles */
+.timeline {
+position: relative;
+padding: 2rem 0;
+margin: 0 auto;
+width: 90%;
+max-width: 800px;
+border-left: 2px solid #007bff; /* Vertical line */
+}
+
+.timeline-item {
+position: relative;
+padding-left: 2rem;
+margin-bottom: 2rem;
+}
+
+.timeline-item::before {
+content: "";
+position: absolute;
+left: -8px; /* Position the circle */
+top: 0;
+width: 16px;
+height: 16px;
+background-color: #007bff; /* Circle color */
+border-radius: 50%;
+}
+
+/* Responsive Timeline */
+@media (max-width: 768px) {
+.timeline {
+    border-left: 1px solid #007bff;
+}
+.timeline-item::before {
+    width: 10px;
+    height: 10px;
+    left: -5px;
+}
+}
+
+/* Certification Card Styles */
+.card-certification {
+min-height: 400px; /* Adjust height based on your content */
+}
+
+.card-certification img {
+max-height: 100px;
+object-fit: contain;
+}
+
+/* Progress Bar Styles */
+.progress-bar {
+transition: width 0.3s ease-in-out;
+box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2);
+}
+
+/* Hover effect on Progress Bars */
+.progress-bar:hover {
+opacity: 0.9;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Link Hover */
+footer a:hover {
+text-decoration: underline;
+}
